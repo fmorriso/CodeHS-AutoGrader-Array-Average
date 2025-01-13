@@ -1,7 +1,7 @@
 # CodeHS Autograder example AP CS A - 6.3.9 - Array Average
 A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.3.9 Array Average with the following modifications:
-* Change class `AvgOfArray` to `AvgOfArray`.
-* change method `getAverage()`` to `getAvg()` 
+* Change class `ArrayAverage` to `AvgOfArray`.
+* change method `getAverage()` to `getAvg()` 
 
 ## Tools Used
 

@@ -1,36 +1,34 @@
 /**
  * You can write autograded tests here.
  * Test format:
- *  * Autograder grader = new Autograder();
+ * * Autograder grader = new Autograder();
  * grader.assertEqual(String testName, T studentOutput,
- *     T solutionOutput, String messagePass, String messageFail)
+ * T solutionOutput, String messagePass, String messageFail)
  * Alternative test format:
- *  * boolean test = false;
+ * * boolean test = false;
  * grader.addTest(String testName, boolean testStatus,
- *     T studentOutput, T solutionOutput, String message);
- *
+ * T studentOutput, T solutionOutput, String message);
+ * <p>
  * The autograder will automatically track and store all output from println and
  * print. This can be done with the following Autograder functions:
- *  * grader.getOutput(String className);
+ * * grader.getOutput(String className);
  * grader.getOutputArrayList(String className);
- *
+ * <p>
  * If the main class extends ConsoleProgram, you can also set inputs as well.
  * This can be done with any class instance that extends ConsoleProgram:
- *  * MyProgram p1;
+ * * MyProgram p1;
  * p1 = new MyProgram();
  * p1.setInputs(String[] inputs);
- *
+ * <p>
  * Something of note, files in the autograder will overwrite files of the
  * same name in the student code. This can be useful if you want an alterantive
  * version of the master code for a particular file.
- *
+ * <p>
  * You can find some example tests in the code below.
  * See documentation for further information.
  */
-public class Grader
-{
-    public static void main(String [] args)
-    {
+public class Grader {
+    public static void main(String[] args) {
         Autograder grader = new Autograder();
 
         int[] testArray = {78, 80, 82, 85, 91};
