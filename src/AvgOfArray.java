@@ -1,13 +1,13 @@
-public class ArrayAverage
+public class AvgOfArray
 {
     private int[] values;
 
-    public ArrayAverage(int[] theValues)
+    public AvgOfArray(int[] theValues)
     {
         values = theValues;
     }
 
-    public double getAverage()
+    public double getAvg()
     {
         double total = 0;
         for (int val : values)

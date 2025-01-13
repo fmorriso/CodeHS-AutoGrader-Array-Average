@@ -35,15 +35,15 @@ public class Grader
 
         int[] testArray = {78, 80, 82, 85, 91};
 
-        ArrayAverage student = new ArrayAverage(testArray);
-        ArrayAverageSol solution = new ArrayAverageSol(testArray);
+        AvgOfArray student = new AvgOfArray(testArray);
+        AvgOfArraySolution solution = new AvgOfArraySolution(testArray);
 
         final String studentClassName = "ArrayAverage";
         final String solutionClassName = "ArrayAverageSol";
 
         // Test 1 - Test Method
-        grader.assertEqual("Testing the average method",
-                student.getAverage(), solution.getAverage(),
+        String testName = "Testing the average method";
+        grader.assertEqual(testName, student.getAvg(), solution.getAvg(),
                 "Great!", "Check your getAverage() method. Did you calculate as a double?");
 
         // Test 2 - Test Output.
@@ -54,7 +54,7 @@ public class Grader
 
         MainSolution mainSol = new MainSolution();
         String mainSolClassName = mainSol.getClass().getName();
-        System.out.format("mainSol.getClass().getName()= %s%n", mainSol.getClass().getName());
+        // System.out.format("mainSol.getClass().getName()= %s%n", mainSol.getClass().getName());
         mainSol.run();
 
         ;

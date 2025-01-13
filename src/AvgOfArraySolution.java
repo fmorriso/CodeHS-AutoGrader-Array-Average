@@ -1,13 +1,13 @@
-public class ArrayAverageSol
+public class AvgOfArraySolution
 {
     private int[] values;
 
-    public ArrayAverageSol(int[] theValues)
+    public AvgOfArraySolution(int[] theValues)
     {
         values = theValues;
     }
 
-    public double getAverage()
+    public double getAvg()
     {
         double total = 0;
         for (int val : values)

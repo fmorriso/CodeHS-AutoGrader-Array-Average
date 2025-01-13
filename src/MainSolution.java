@@ -4,8 +4,8 @@ public class MainSolution extends ConsoleProgram
     {
         int[] numArray =  {12, 17, 65, 7, 30, 88};
 
-        ArrayAverageSol myArray = new ArrayAverageSol(numArray);
+        AvgOfArraySolution myArray = new AvgOfArraySolution(numArray);
 
-        System.out.println("The average of the array is " + myArray.getAverage());
+        System.out.println("The average of the array is " + myArray.getAvg());
     }
 }
