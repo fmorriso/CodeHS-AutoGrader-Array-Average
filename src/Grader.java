@@ -42,12 +42,12 @@ public class Grader
         final String solutionClassName = "ArrayAverageSol";
 
         // Test 1 - Test Method
-        String testName = "Testing the average method";
-        grader.assertEqual(testName, student.getAvg(), solution.getAvg(),
+        String test1Name = "Testing the average method";
+        grader.assertEqual(test1Name, student.getAvg(), solution.getAvg(),
                 "Great!", "Check your getAverage() method. Did you calculate as a double?");
 
         // Test 2 - Test Output.
-
+        String test2Name = "Checking the output of your console.";
         ArrayAverageTester studentSol = new ArrayAverageTester();
         studentSol.run();
         String studentOutput = grader.getOutput(studentClassName);
@@ -57,11 +57,9 @@ public class Grader
         // System.out.format("mainSol.getClass().getName()= %s%n", mainSol.getClass().getName());
         mainSol.run();
 
-        ;
         String solutionOutput = grader.getOutput(mainSolClassName);
 
-        grader.assertEqual("Checking the output of your console.",
-                studentOutput, solutionOutput,
+        grader.assertEqual(test2Name, studentOutput, solutionOutput,
                 "Perfect!", "Check your output. Make sure you are matching the example.");
 
         // Test 3
